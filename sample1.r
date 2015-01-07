@@ -12,3 +12,6 @@ summary(ols <- lm(crime ~ poverty + single, data = cdata))
 #plot results----
 opar <- par(mfrow = c(2,2), oma = c(0, 0, 1.1, 0))
 plot(ols, las = 1)
+
+#Test interaction term
+summary(ols2 <- lm(crime ~ poverty + single + single*poverty, data = cdata))
