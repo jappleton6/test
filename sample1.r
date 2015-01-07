@@ -15,3 +15,5 @@ plot(ols, las = 1)
 
 #Test interaction term
 summary(ols2 <- lm(crime ~ poverty + single + single*poverty, data = cdata))
+
+# added a comment
